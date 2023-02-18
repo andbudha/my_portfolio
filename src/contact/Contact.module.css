@@ -13,6 +13,7 @@
     border: 1px solid;
     min-height: 80vh;
     width: 75%;
+    background-color: lemonchiffon;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
