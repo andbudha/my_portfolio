@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    background-color: darkslateblue;
+    color: azure;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

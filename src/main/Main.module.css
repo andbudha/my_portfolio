@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_container {
+    border: solid 1px;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.greeting {
+    width: 300px;
+    background-color: azure;
+    border: 1px solid black;
+}
+
+.main_img {
+    width: 350px;
+    height: 450px;
+    background-color: azure;
+    border: 1px solid black;
+}

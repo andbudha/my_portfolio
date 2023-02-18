@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects {
+    min-height: 100vh;
+    background-color: darkseagreen;
+}
+
+.projects_container {
+    border: solid 1px;
+    min-height: 100vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.projects_title {
+    min-height: 20vh;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_title h2 {
+    background-color: coral;
+}
+
+.projects_box_container {
+    border: 1px solid;
+    min-height: 80vh;
+    background-color: palegreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
