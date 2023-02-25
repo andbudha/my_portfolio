@@ -27,11 +27,11 @@
 
 .footer_container .link_container {
     height: 50px;
-    max-width: 280px;
-    width: 100%;
     background-color: azure;
     display: flex;
     justify-content: space-between;
+    max-width: 280px;
+    width: 100%;
 }
 
 .footer_container .link_container .link {
