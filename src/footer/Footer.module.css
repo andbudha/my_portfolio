@@ -27,7 +27,8 @@
 
 .footer_container .link_container {
     height: 50px;
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     background-color: azure;
     display: flex;
     justify-content: space-between;
