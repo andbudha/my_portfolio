@@ -1,19 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .contact {
-    min-height: 80vh;
-    background-color: sandybrown;
+    background-color: #001C30;
+    border: 1px solid white;
 }
 
 .contact_container {
-    border: 1px solid;
-    min-height: 80vh;
+    border: 1px solid white;
     width: 75%;
-    background-color: lemonchiffon;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

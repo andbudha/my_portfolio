@@ -5,23 +5,14 @@
 }
 
 .projects {
-    min-height: 100vh;
-    background-color: darkseagreen;
+    background-color: #001C30;
+    border: 1px solid white;
 }
 
 .projects_container {
-    border: solid 1px;
-    min-height: 100vh;
+    border: solid 1px white;
     width: 75%;
     margin: 0 auto;
-}
-
-.projects_title {
-    min-height: 20vh;
-    background-color: violet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .projects_title h2 {
@@ -29,9 +20,7 @@
 }
 
 .projects_box_container {
-    border: 1px solid;
-    min-height: 80vh;
-    background-color: palegreen;
+    border: 1px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;

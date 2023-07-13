@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from './Projects.module.css'
-import {Project} from "./project/Project";
+import { Project } from "./project/Project";
+import { Title } from '../components/common/title/Title';
 
 export const Projects = () => {
 
@@ -9,12 +9,10 @@ export const Projects = () => {
     return (
         <div className={styles.projects}>
             <div className={styles.projects_container}>
-                <div className={styles.projects_title}>
-                    <h2>My Projects</h2>
-                </div>
+                <Title title={'My Projects'} />
                 <div className={styles.projects_box_container}>
-                    <Project description={description}/>
-                    <Project description={description}/>
+                    <Project description={description} />
+                    <Project description={description} />
                 </div>
             </div>
         </div>
