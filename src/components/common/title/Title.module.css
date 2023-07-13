@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    min-height: 100px;
+    background-color: #001C30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.title h2 {
+    color: #ffffff;
+    font-size: 33px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+}
+
+.title h2::before {
+    content: '';
+    width: 70px;
+    background-color: #ff4500;
+    bottom: -20px;
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

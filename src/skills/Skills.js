@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Skills.module.css'
-import {Skill} from "./skill/Skill";
+import { Skill } from "./skill/Skill";
+import { Title } from '../components/common/title/Title';
 
 export const Skills = () => {
 
@@ -9,13 +10,11 @@ export const Skills = () => {
     return (
         <div className={styles.skills}>
             <div className={styles.skills_container}>
-                <div className={styles.skills_title}>
-                    <h2>My Skills</h2>
-                </div>
+                <Title title={'My Skills'} />
                 <div className={styles.skills_box_container}>
-                    <Skill title={'JS'} description={description}/>
-                    <Skill title={'CSS'} description={description}/>
-                    <Skill title={'REACT'} description={description}/>
+                    <Skill title={'JS'} description={description} />
+                    <Skill title={'CSS'} description={description} />
+                    <Skill title={'REACT'} description={description} />
                 </div>
 
             </div>
