@@ -1,4 +1,4 @@
-import styles from './Projects.module.css'
+import styles from './Projects.module.scss'
 import { Project } from "./project/Project";
 import { Title } from '../components/common/title/Title';
 import todolistImg from './project_images/todolist.png'
