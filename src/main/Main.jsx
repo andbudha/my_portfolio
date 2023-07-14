@@ -19,7 +19,7 @@ export const Main = () => {
                     <span className={styles.greeting_span}>Hi There</span>
                     <h1>I am <span className={styles.name}>Andrei</span></h1>
                     <span className={styles.position_span}>A FRONT-END DEVELOPER</span>
-                    <div className={styles}>
+                    <div className={styles.btn_container}>
 
                     </div>
                 </div>
