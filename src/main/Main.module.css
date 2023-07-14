@@ -50,8 +50,8 @@
 }
 
 .main_img {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     border: 5px solid #ff4500;
     border-radius: 50%;
     background-color: #ffffff;
@@ -61,23 +61,105 @@
     position: relative;
 }
 
-@media screen and (max-width: 1140px) {
+.secondary_img {
+    display: none;
+    width: 450px;
+    height: 450px;
+    border: 5px solid #ff4500;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.btn_container {
+    height: 75px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projects_btn {
+    text-decoration: none;
+    margin-right: 20px;
+    width: 145px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #ff4500;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+}
+
+.projects_btn:hover {
+    transition: ease-in-out all 0.55s;
+    border: #ff4500 2px solid;
+    background-color: #ffffff;
+    color: #ff4500;
+}
+
+.projects_btn:not(:hover) {
+    transition: ease-in-out all 0.55s;
+}
+
+.contact_btn {
+    text-decoration: none;
+    width: 145px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: #ff4500 2px solid;
+    background-color: #ffffff;
+    color: #ff4500;
+}
+
+.contact_btn:hover {
+    transition: ease-in-out all 0.55s;
+    background-color: #ff4500;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+}
+
+.contact_btn:not(:hover) {
+    transition: ease-in-out all 0.55s;
+}
+
+@media screen and (max-width: 1210px) {
     .main_container {
         width: 100%;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .main_container>* {
-        margin: 10px;
+        margin: 5px;
         text-align: center;
     }
 
+    .greeting {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .main_img {
-        width: 450px;
-        height: 450px;
+        display: none;
+    }
+
+    .secondary_img {
+        display: block;
     }
 }
 
@@ -92,7 +174,7 @@
 
     .greeting_span {
         font-size: 25px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .greeting h1 {
@@ -105,10 +187,25 @@
         font-weight: 400;
     }
 
-    .main_img {
+    .secondary_img {
         width: 300px;
         height: 300px;
     }
+
+    .projects_btn {
+        width: 125px;
+        height: 45px;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .contact_btn {
+        width: 125px;
+        height: 45px;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -125,7 +222,7 @@
         width: 200x;
     }
 
-    .main_img {
+    .secondary_img {
         width: 250px;
         height: 250px;
     }
