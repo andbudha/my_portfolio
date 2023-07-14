@@ -28,3 +28,5 @@
     text-decoration: none;
     color: azure;
 }
+
+@media screen and (max-width: 1210px) {}

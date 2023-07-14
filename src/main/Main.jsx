@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Main.module.css';
-import profileImgOne from './img/no_background_1.png'
-import profileImgTwo from './img/no_background_2.1.png'
+import profileImgOne from './img/no_background_1.1.png'
+import profileImgTwo from './img/no_background_1.2.png'
 
 
 export const Main = () => {
