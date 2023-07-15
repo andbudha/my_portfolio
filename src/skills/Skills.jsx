@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Skills.module.css'
 import { Skill } from "./skill/Skill";
 import { Title } from '../components/common/title/Title';
+import { ProgressBar } from '../progressbar/ProgressBar';
 
 export const Skills = () => {
 
@@ -11,12 +12,7 @@ export const Skills = () => {
         <div className={styles.skills}>
             <div className={styles.skills_container}>
                 <Title title={'My Skills'} />
-                <div className={styles.skills_box_container}>
-                    <Skill title={'JS'} description={description} />
-                    <Skill title={'CSS'} description={description} />
-                    <Skill title={'REACT'} description={description} />
-                </div>
-
+                <ProgressBar />
             </div>
         </div>
     );

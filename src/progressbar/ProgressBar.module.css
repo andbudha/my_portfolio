@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --degrees: 0deg;
+}
+
+.progressbar {
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progress {
+    margin: 20px;
+}
+
+.progress_container .html {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    border: #ff4500 1px solid;
+    background: conic-gradient(#ff4500 270deg, #ffffff 0turn);
+    animation: animate 5s linear forwards;
+}
+
+.progress_container .js {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    border: #ff4500 1px solid;
+    background: conic-gradient(#ff4500 252deg, #ffffff 0turn);
+    animation: animate 5s linear forwards;
+}
+
+.progress_container .react {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    border: #ff4500 1px solid;
+    background: conic-gradient(#ff4500 306deg, #ffffff 0turn);
+    animation: animate 5s linear forwards;
+}
+
+.progress_values {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: #ff4500 1px solid;
+    background: #001C30;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+
+}
+
+.progress_values h3 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ff4500;
+}
+
+.progress_values span {
+    font-size: 20px;
+}
+
+.progress_values h4 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
