@@ -1,6 +1,4 @@
-import React from 'react';
 import styles from './Skills.module.css'
-import { Skill } from "./skill/Skill";
 import { Title } from '../components/common/title/Title';
 import { ProgressBar } from '../progressbar/ProgressBar';
 
