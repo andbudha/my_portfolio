@@ -52,8 +52,8 @@ export const ProgressBar = () => {
                 <div className={`${styles.progress} ${styles.mui}`}>
                     <div className={styles.progress_values}>
                         <h3>90<span>%</span></h3>
-                        <h4>MUI &</h4>
                         <h4>TAILWINDCSS</h4>
+                        <h4>& MUI</h4>
                     </div>
                 </div>
             </div>
