@@ -15,6 +15,33 @@
     margin: 20px;
     border: #ff4500 2px solid;
     box-shadow: #ff4500 0px 2px 15px;
+    position: relative;
+}
+
+.project_box a {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project_box a:hover {
+    opacity: 0.8;
+    background-color: #001C30;
+    transition: ease-in-out all 0.4s;
+}
+
+.project_box a:not(:hover) {
+    transition: ease-in-out all 0.4s;
 }
 
 .img_container {
@@ -30,50 +57,32 @@
     position: relative;
 }
 
-.img_container a {
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    text-decoration: none;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_container a:hover {
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    opacity: 0.8;
-    background-color: #16224b;
-    transition: ease-in-out all 0.4s;
-    color: #ff4500;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-.img_container a:not(:hover) {
-    transition: ease-in-out all 1.1s;
+.img_container {
+    background-size: 120%;
 }
 
 .project_description_box {
     min-height: 35%;
     min-width: 100%;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .project_title {
-    font-size: 22px;
     margin: 0 0 5px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #ffffff;
-
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #ff4500;
 }
 
 .project_description {
@@ -86,9 +95,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
     .project_box {
-        width: 400px;
-        height: 500px;
+        height: 350px;
+    }
+
+    .img_container {
+        min-height: 50%;
+    }
+
+    .project_description_box {
+        min-height: 50%;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+
+    .img_container {
+        min-height: 40%;
+    }
+
+    .project_description_box {
+        min-height: 60%;
+        padding: 15px 10px;
+    }
+
+    .project_title {
+        font-size: 20px;
     }
 }
