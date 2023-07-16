@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px;
-    border: #ff4500 2px solid;
+    border: #16224b 2px solid;
     box-shadow: #ff4500 0px 2px 15px;
     position: relative;
 }
@@ -55,10 +55,6 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
-
-.img_container {
-    background-size: 120%;
 }
 
 .project_description_box {
