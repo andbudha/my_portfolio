@@ -59,6 +59,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    box-shadow: #ff4500 0px 2px 20px;
 }
 
 .secondary_img {
@@ -66,6 +67,7 @@
     width: 450px;
     height: 450px;
     border: 5px solid #ff4500;
+    box-shadow: #ff4500 0px 2px 15px;
     border-radius: 50%;
     background-color: #ffffff;
     background-size: 100%;
