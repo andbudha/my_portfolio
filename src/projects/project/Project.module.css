@@ -14,7 +14,8 @@
     justify-content: space-between;
     margin: 20px;
     border: #16224b 2px solid;
-    box-shadow: #ff4500 0px 2px 15px;
+    border-radius: 7px;
+    box-shadow: #ff4500 0px 2px 20px;
     position: relative;
 }
 
@@ -55,6 +56,8 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .project_description_box {
