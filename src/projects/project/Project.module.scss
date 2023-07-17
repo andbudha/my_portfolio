@@ -1,0 +1,126 @@
+@import '../../components/common/sass/variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project_box {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border: $additional_color 2px solid;
+    border-radius: 7px;
+    box-shadow: $primary_color 0px 2px 20px;
+    position: relative;
+
+    a {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $secondary_color;
+        font-size: 25px;
+        font-weight: 400;
+
+        &:hover {
+            opacity: 0.8;
+            background-color: $background_color;
+            transition: ease-in-out all 0.4s;
+        }
+
+        &:not(:hover) {
+            transition: ease-in-out all 0.4s;
+        }
+    }
+
+    .img_container {
+        min-height: 60%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    .project_description_box {
+        min-height: 35%;
+        min-width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+            .project_title {
+                margin: 0 0 5px;
+                font-size: 23px;
+                letter-spacing: 1px;
+                line-height: 1;
+                color: $primary_color;
+            }
+        }
+
+        .project_description {
+            min-height: auto;
+            margin: 0 0 5px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $secondary_color;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .project_box {
+            height: 350px;
+        }
+
+        .img_container {
+            min-height: 50%;
+        }
+
+        .project_description_box {
+            min-height: 50%;
+            padding: 15px 10px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+
+        .img_container {
+            min-height: 40%;
+        }
+
+        .project_description_box {
+            min-height: 60%;
+            padding: 15px 10px;
+        }
+
+        .project_title {
+            font-size: 20px;
+        }
+    }
+}

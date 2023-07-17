@@ -1,9 +1,9 @@
 import styles from './Projects.module.scss'
 import { Project } from "./project/Project";
 import { Title } from '../components/common/title/Title';
-import jsTodoImg from './project_images/jstodo.png'
-import counterImg from './project_images/counter.png'
-import reactTodoImg from './project_images/reacttodo.png'
+import jsTodoImg from './project_images/jstodo.jpg'
+import counterImg from './project_images/counter.jpg'
+import reactTodoImg from './project_images/reacttodo.jpg'
 
 export const Projects = () => {
 
