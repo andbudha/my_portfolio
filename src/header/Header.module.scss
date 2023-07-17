@@ -1,3 +1,5 @@
+@import '../components/common/sass/mixins.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,5 @@
 
 .header {
     height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include flexBox(nowrap, row, flex-end, center);
 }
