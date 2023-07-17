@@ -1,11 +1,6 @@
-import React from 'react';
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTelegram, faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
-
-
-
-
 
 export const Footer = () => {
     return (
