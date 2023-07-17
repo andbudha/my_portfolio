@@ -1,0 +1,58 @@
+@import './variables.scss';
+
+@mixin circularProgressBar($coveredValue) {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $secondary_color;
+    border-radius: 50%;
+    border: $primary_color 1px solid;
+    background: conic-gradient($primary_color $coveredValue, $secondary_color 0turn);
+    animation: animate 5s linear forwards;
+    margin: 20px;
+
+    .progress_values {
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        border: $primary_color 1px solid;
+        background: $background_color;
+        color: $secondary_color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: $primary_color;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        @media screen and (max-width: 550px) {
+            width: 160px;
+            height: 160px;
+            line-height: 1.2;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        height: 175px;
+        width: 175px;
+    }
+}

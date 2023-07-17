@@ -1,4 +1,4 @@
-import styles from './ProgressBar.module.css'
+import styles from './ProgressBar.module.scss'
 
 
 export const ProgressBar = () => {
@@ -6,7 +6,7 @@ export const ProgressBar = () => {
     return (
         <div className={styles.progressbar}>
             <div className={styles.progress_container}>
-                <div className={`${styles.progress} ${styles.html}`} style={{ '--value': '75deg' }}>
+                <div className={`${styles.progress} ${styles.html}`}>
                     <div className={styles.progress_values}>
                         <h3>75<span>%</span></h3>
                         <h4>HTML & CSS</h4>
@@ -51,7 +51,7 @@ export const ProgressBar = () => {
                 </div>
                 <div className={`${styles.progress} ${styles.mui}`}>
                     <div className={styles.progress_values}>
-                        <h3>90<span>%</span></h3>
+                        <h3>80<span>%</span></h3>
                         <h4>TAILWINDCSS</h4>
                         <h4>& MUI</h4>
                     </div>
