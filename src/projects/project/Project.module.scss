@@ -1,4 +1,5 @@
 @import '../../components/common/sass/variables.scss';
+@import '../../components/common/sass/mixins.scss';
 
 * {
     margin: 0;
@@ -9,15 +10,12 @@
 .project_box {
     width: 400px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     margin: 20px;
     border: $additional_color 2px solid;
     border-radius: 7px;
     box-shadow: $primary_color 0px 2px 20px;
     position: relative;
+    @include flexBox(nowrap, column, space-between, center);
 
     a {
         position: absolute;
@@ -25,13 +23,11 @@
         height: 100%;
         width: 100%;
         opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-decoration: none;
         color: $secondary_color;
         font-size: 25px;
         font-weight: 400;
+        @include flexBox(nowrap, row, center, center);
 
         &:hover {
             opacity: 0.8;
@@ -47,26 +43,20 @@
     .img_container {
         min-height: 60%;
         min-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
+        @include flexBox(nowrap, column, center, center);
     }
 
     .project_description_box {
         min-height: 35%;
         min-width: 100%;
         padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(nowrap, column, center, center);
 
         .title {
             width: 100%;
