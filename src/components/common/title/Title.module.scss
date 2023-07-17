@@ -1,4 +1,5 @@
 @import '../sass/variables.scss';
+@import '../sass/mixins.scss';
 
 * {
     margin: 0;
@@ -9,11 +10,9 @@
 
 .title {
     min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    @include flexBox(nowrap, row, center, center);
 
     h2 {
         color: $secondary_color;
