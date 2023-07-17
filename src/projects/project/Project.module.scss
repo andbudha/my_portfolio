@@ -25,7 +25,7 @@
         opacity: 0;
         text-decoration: none;
         color: $secondary_color;
-        font-size: 25px;
+        font-size: $primaryTextSize;
         font-weight: 400;
         @include flexBox(nowrap, row, center, center);
 
@@ -65,7 +65,7 @@
 
             .project_title {
                 margin: 0 0 5px;
-                font-size: 23px;
+                font-size: $primaryTextSize;
                 letter-spacing: 1px;
                 line-height: 1;
                 color: $primary_color;
@@ -75,15 +75,16 @@
         .project_description {
             min-height: auto;
             margin: 0 0 5px;
-            font-size: 16px;
+            font-size: $smallTextSize;
             font-weight: 400;
             line-height: 1.5;
+            letter-spacing: 0.8px;
             color: $secondary_color;
             font-family: 'Poppins', sans-serif;
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 520px) {
         .project_box {
             height: 350px;
         }
@@ -98,19 +99,19 @@
         }
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 430px) {
 
         .img_container {
-            min-height: 40%;
+            min-height: 35%;
         }
 
         .project_description_box {
-            min-height: 60%;
+            min-height: 65%;
             padding: 15px 10px;
         }
 
         .project_title {
-            font-size: 20px;
+            font-size: $secondaryTextSize;
         }
     }
 }

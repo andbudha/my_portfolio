@@ -23,11 +23,11 @@
             line-height: 1.5;
 
             .greeting_span {
-                font-size: 35px;
+                font-size: $primaryTitle;
                 font-weight: 300;
 
                 @media screen and (max-width: 520px) {
-                    font-size: 25px;
+                    font-size: $secondaryTitle;
                     font-weight: 400;
                 }
             }
@@ -47,11 +47,11 @@
             }
 
             .position_span {
-                font-size: 25px;
+                font-size: $secondaryTitle;
                 font-weight: 400;
 
                 @media screen and (max-width: 520px) {
-                    font-size: 15px;
+                    font-size: $normalTextSize;
                     font-weight: 400;
                 }
             }
@@ -67,9 +67,9 @@
                     width: 145px;
                     height: 50px;
                     display: inline-block;
-                    padding: 15px 10px;
+                    padding: 14px 10px;
                     cursor: pointer;
-                    font-size: 15px;
+                    font-size: $smallTextSize;
                     background-color: $primary_color;
                     color: $secondary_color;
                     border: $secondary_color 2px solid;
@@ -84,9 +84,9 @@
                     @media screen and (max-width: 520px) {
                         width: 120px;
                         height: 45px;
-                        padding: 12px 10px;
+                        padding: 13px 10px;
                         margin-right: 10px;
-                        font-size: 13px;
+                        font-size: $xsmallTextSize;
                     }
                 }
 
@@ -99,9 +99,9 @@
                     width: 145px;
                     height: 50px;
                     display: inline-block;
-                    padding: 15px 10px;
+                    padding: 14px 10px;
                     cursor: pointer;
-                    font-size: 15px;
+                    font-size: $smallTextSize;
                     border: $primary_color 2px solid;
                     background-color: $secondary_color;
                     color: $primary_color;
@@ -116,8 +116,8 @@
                     @media screen and (max-width: 520px) {
                         width: 120px;
                         height: 45px;
-                        padding: 12px 10px;
-                        font-size: 13px;
+                        padding: 13px 10px;
+                        font-size: $xsmallTextSize;
                     }
                 }
 
