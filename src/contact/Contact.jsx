@@ -1,4 +1,4 @@
-import styles from './Contact.module.css'
+import styles from './Contact.module.scss'
 import { Title } from '../components/common/title/Title';
 
 export const Contact = () => {

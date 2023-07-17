@@ -18,7 +18,7 @@ export const Main = () => {
                 <div className={styles.greeting}>
                     <span className={styles.greeting_span}>Hi There</span>
                     <h1>I'm <span className={styles.name}>Andrei</span></h1>
-                    <span className={styles.position_span}>A FRONT-END DEVELOPER</span>
+                    <span className={styles.position_span}>FRONT-END DEVELOPER</span>
                     <div className={styles.btn_container}>
                         <a href="#" className={styles.projects_btn}>MY PROJECTS</a>
                         <a href="#" className={styles.contact_btn}>GET IN TOUCH</a>

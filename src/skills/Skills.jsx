@@ -1,4 +1,4 @@
-import styles from './Skills.module.css'
+import styles from './Skills.module.scss'
 import { Title } from '../components/common/title/Title';
 import { ProgressBar } from '../progressbar/ProgressBar';
 
