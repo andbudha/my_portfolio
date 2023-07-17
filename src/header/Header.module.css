@@ -5,9 +5,7 @@
 }
 
 .header {
-    height: 80px;
-    background-color: darkslateblue;
-    color: azure;
+    height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;

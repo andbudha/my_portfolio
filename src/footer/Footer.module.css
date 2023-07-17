@@ -42,6 +42,15 @@
     width: 75%;
 }
 
+.footer_container .link_container .link .icon:hover {
+    transform: scale(1.15) translateY(-3px);
+    transition: .3s;
+}
+
+.footer_container .link_container .link .icon:not(:hover) {
+    transition: .3s;
+}
+
 .copyright span {
     color: #ff4500;
 }

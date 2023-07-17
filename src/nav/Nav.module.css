@@ -6,8 +6,7 @@
 
 .nav {
     height: 100%;
-    width: 80%;
-    border: 1px solid white;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,9 +15,8 @@
 }
 
 .nav_container {
-    width: 300px;
-    height: 30px;
-    border: 1px solid;
+    width: 400px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +24,55 @@
 
 .nav a {
     text-decoration: none;
-    color: azure;
+    color: #ff4500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
 }
 
-@media screen and (max-width: 1210px) {}
+.nav a:hover {
+    color: #ffffff;
+    transition: ease-in-out all 0.55s;
+}
+
+.nav a:not(:hover) {
+    transition: ease-in-out all 0.55s;
+}
+
+.nav a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ff4500;
+    margin: auto;
+    transition: .4s;
+    bottom: -5px;
+
+}
+
+.nav a:hover:after {
+    width: 100%;
+
+}
+
+/* media-queries */
+
+@media screen and (max-width: 520px) {
+    .nav {
+        width: 100%;
+    }
+
+    .nav_container {
+        width: 350;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .nav {
+        align-items: center;
+    }
+}
