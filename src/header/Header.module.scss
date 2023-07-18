@@ -8,6 +8,5 @@
 
 .header {
     height: 100px;
-    background-color: $additional_color;
     @include flexBox(nowrap, row, flex-end, center);
 }

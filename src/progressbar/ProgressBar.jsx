@@ -1,6 +1,6 @@
 import styles from './ProgressBar.module.scss'
 import Fade from 'react-reveal/Fade';
-
+import 'react-circular-progressbar/dist/styles.css';
 
 export const ProgressBar = () => {
 
