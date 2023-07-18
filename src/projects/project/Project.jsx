@@ -1,6 +1,5 @@
-
 import styles from './Project.module.scss'
-
+import Fade from 'react-reveal/Fade';
 
 export const Project = (props) => {
 
@@ -17,6 +16,6 @@ export const Project = (props) => {
                     {props.description}
                 </p>
             </div>
-        </div>
+        </div >
     );
 };
