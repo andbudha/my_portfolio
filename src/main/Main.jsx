@@ -1,5 +1,6 @@
 import styles from './Main.module.scss';
 import { TypeAnimation } from 'react-type-animation';
+import { Tilt } from 'react-tilt'
 import profileImgOne from './img/no_background_1.1.png';
 import profileImgTwo from './img/no_background_1.2.png';
 
@@ -13,7 +14,7 @@ export const Main = () => {
         backgroundImage: `url(${profileImgTwo})`
     }
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id={'main'}>
             <div className={styles.main_container}>
                 <div className={styles.greeting}>
                     <span className={styles.greeting_span}>Hi There</span>
@@ -34,8 +35,10 @@ export const Main = () => {
                         <a href="#" className={styles.contact_btn}>GET IN TOUCH</a>
                     </div>
                 </div>
-                <div className={styles.main_img} style={profileImgMain}></div>
-                <div className={styles.secondary_img} style={profileImgSecondary}></div>
+                <Tilt >
+                    <div className={styles.main_img} style={profileImgMain}></div>
+                    <div className={styles.secondary_img} style={profileImgSecondary}></div>
+                </Tilt>
             </div>
         </div >
     );

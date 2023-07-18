@@ -11,11 +11,13 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
+    background: $additional_color;
     @include flexBox(nowrap, column, center, flex-end);
 
     .nav_container {
         width: 400px;
         height: 50px;
+        background: $additional_color;
         @include flexBox(nowrap, row, space-between, center);
 
         a {
@@ -24,6 +26,7 @@
             font-size: $secondaryTextSize;
             letter-spacing: 2px;
             position: relative;
+            background: $additional_color;
         }
 
         a:hover {

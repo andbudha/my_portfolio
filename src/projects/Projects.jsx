@@ -22,7 +22,7 @@ export const Projects = () => {
 
 
     return (
-        <div className={styles.projects}>
+        <div className={styles.projects} id={'projects'}>
             <div className={styles.projects_container}>
                 <Title title={'My Projects'} />
                 <div className={styles.projects_box_container}>

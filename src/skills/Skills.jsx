@@ -5,7 +5,7 @@ import { ProgressBar } from '../progressbar/ProgressBar';
 export const Skills = () => {
 
     return (
-        <div className={styles.skills}>
+        <div className={styles.skills} id={'skills'}>
             <div className={styles.skills_container}>
                 <Title title={'My Skills'} />
                 <ProgressBar />
