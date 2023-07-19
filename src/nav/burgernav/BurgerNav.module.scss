@@ -1,0 +1,67 @@
+@import '../../components/common/sass/variables.scss';
+@import '../../components/common/sass/mixins.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.burger_nav {
+    border: solid 1px white;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background: lime;
+    position: relative;
+
+    .burger_nav_container {
+        width: 70%;
+        height: 100%;
+        background: $secondary_color;
+        margin: 0 auto;
+        @include flexBox(nowrap, column, space-evenly, center);
+
+        a {
+            text-decoration: none;
+            color: $primary_color;
+            font-size: $smallTextSize;
+            letter-spacing: 2px;
+            position: relative;
+            cursor: pointer;
+            background: $additional_color;
+
+            &:hover {
+                color: $secondary_color;
+            }
+        }
+
+        .active {
+            color: $secondary_color;
+        }
+
+        .nav_container>* {
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 500px) {
+        display: none;
+    }
+
+    .burger_btn {
+        height: 30px;
+        width: 30px;
+        color: $primary_color;
+        position: absolute;
+        top: 15px;
+        right: 0;
+
+        .burger {
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+    }
+}

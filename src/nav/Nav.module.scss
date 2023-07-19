@@ -84,8 +84,12 @@
     }
 
     @media screen and (max-width: 520px) {
-        width: 100%;
+        display: none;
     }
+
+    // @media screen and (max-width: 520px) {
+    //     width: 100%;
+    // }
 
     @media screen and (max-width: 1210px) {
         align-items: center;

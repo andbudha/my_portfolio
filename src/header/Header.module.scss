@@ -17,4 +17,9 @@
     z-index: 10;
     opacity: 0.95;
     @include flexBox(nowrap, row, flex-end, center);
+
+
+    @media screen and (max-width: 500px) {
+        height: 200px;
+    }
 }
