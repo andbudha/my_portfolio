@@ -90,6 +90,15 @@
                         margin-right: 10px;
                         font-size: $xsmallTextSize;
                     }
+
+                    .btn {
+                        background: $primary_color;
+                    }
+
+                }
+
+                .btn {
+                    background: $primary_color;
                 }
 
                 .projects_btn:not(:hover) {
@@ -126,6 +135,7 @@
                 .contact_btn:not(:hover) {
                     transition: ease-in-out all 0.55s;
                 }
+
             }
 
             @media screen and (max-width: 360px) {

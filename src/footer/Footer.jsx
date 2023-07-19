@@ -11,16 +11,13 @@ export const Footer = () => {
 
                 <div className={styles.link_container}>
                     <Fade bottom>
-                        <a className={styles.link} href="#"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} /></a>
+                        <a className={styles.link} href="https://www.linkedin.com/in/andrei-bartov-584427201" target="_blank"><FontAwesomeIcon icon={faLinkedin} className={styles.icon} /></a>
                     </Fade>
                     <Fade bottom>
-                        <a className={styles.link} href="#"><FontAwesomeIcon icon={faGithub} className={styles.icon} /></a>
+                        <a className={styles.link} href="https://github.com/andbudha" target="_blank"><FontAwesomeIcon icon={faGithub} className={styles.icon} /></a>
                     </Fade>
                     <Fade bottom>
-                        <a className={styles.link} href="#"><FontAwesomeIcon icon={faTelegram} className={styles.icon} /></a>
-                    </Fade>
-                    <Fade bottom>
-                        <a className={styles.link} href="#"><FontAwesomeIcon icon={faSquareFacebook} className={styles.icon} /></a>
+                        <a className={styles.link} href="https://t.me/andbudha" target="_blank"><FontAwesomeIcon icon={faTelegram} className={styles.icon} /></a>
                     </Fade>
                 </div>
                 <h3 className={styles.copyright}><span>&copy;</span> All Rights Reserved</h3>
