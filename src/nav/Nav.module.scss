@@ -29,34 +29,48 @@
             cursor: pointer;
             background: $additional_color;
 
-            // &:hover {
-            //     color: $secondary_color;
-            //     transition: ease-in-out all 0.3s;
-            // }
+            &:hover {
+                color: $secondary_color;
+                transition: ease-in-out all 0.2s;
+            }
 
-            // &:not(:hover) {
-            //     transition: ease-in-out all 0.3s;
-            // }
+            &:not(:hover) {
+                transition: ease-in-out all 0.2s;
+            }
 
-            // &::after {
-            //     position: absolute;
-            //     content: '';
-            //     display: block;
-            //     width: 0%;
-            //     height: 2px;
-            //     background: $primary_color;
-            //     margin: auto;
-            //     transition: .4s;
-            //     bottom: -5px;
-            // }
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                background: $primary_color;
+                margin: auto;
+                transition: .2s;
+                bottom: -10px;
+            }
 
-            // &:hover:after {
-            //     width: 100%;
-            // }
+            &:hover:after {
+                width: 100%;
+            }
+
         }
 
         .active {
             color: $secondary_color;
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                background: $primary_color;
+                margin: auto;
+                transition: .2s;
+                bottom: -10px;
+                width: 100%;
+            }
         }
 
         @media screen and (max-width: 520px) {

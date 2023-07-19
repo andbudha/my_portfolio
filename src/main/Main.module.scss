@@ -197,6 +197,10 @@
         }
     }
 
+    @media only screen and (device-width: 740px) and (orientation: landscape) {
+        /* css rules */
+    }
+
     @media screen and (max-width: 820px) {
         margin-bottom: 100px;
     }
