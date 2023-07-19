@@ -26,37 +26,46 @@
             font-size: $secondaryTextSize;
             letter-spacing: 2px;
             position: relative;
+            cursor: pointer;
             background: $additional_color;
+
+            // &:hover {
+            //     color: $secondary_color;
+            //     transition: ease-in-out all 0.3s;
+            // }
+
+            // &:not(:hover) {
+            //     transition: ease-in-out all 0.3s;
+            // }
+
+            // &::after {
+            //     position: absolute;
+            //     content: '';
+            //     display: block;
+            //     width: 0%;
+            //     height: 2px;
+            //     background: $primary_color;
+            //     margin: auto;
+            //     transition: .4s;
+            //     bottom: -5px;
+            // }
+
+            // &:hover:after {
+            //     width: 100%;
+            // }
         }
 
-        a:hover {
+        .active {
             color: $secondary_color;
-            transition: ease-in-out all 0.55s;
-        }
-
-        a:not(:hover) {
-            transition: ease-in-out all 0.55s;
-        }
-
-        a::after {
-            position: absolute;
-            content: '';
-            display: block;
-            width: 0%;
-            height: 2px;
-            background: $primary_color;
-            margin: auto;
-            transition: .4s;
-            bottom: -5px;
-        }
-
-        a:hover:after {
-            width: 100%;
         }
 
         @media screen and (max-width: 520px) {
             width: 330;
             justify-content: space-evenly;
+        }
+
+        .nav_container>* {
+            cursor: pointer;
         }
     }
 

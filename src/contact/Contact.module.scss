@@ -8,7 +8,10 @@
 }
 
 .contact {
-    height: 650px;
+    height: 800px;
+    border: 1px solid #fff;
+    width: 80%;
+    margin: 50px auto 300px;
 
     .contact_container {
         border: 2px solid #001C30;
@@ -111,28 +114,47 @@
                     transition: ease-in-out all 0.55s;
                 }
             }
+
+            @media screen and (max-width: 460px) {
+                font-size: $smallTextSize;
+                height: 40px;
+            }
         }
 
         .submit_btn:not(:hover) {
             transition: ease-in-out all 0.55s;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 820px) {
             max-width: 400px;
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 550px) {
             max-width: 350px;
         }
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 460px) {
             height: 400px;
             margin: 30px auto;
-            max-width: 300px;
+            max-width: 320px;
+        }
+
+        @media screen and (max-width: 440px) {
+            max-width: 275px;
+            height: 375px;
         }
     }
 
+
+    @media screen and (max-width: 820px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 520px) {
+        margin-bottom: 50px;
+    }
+
     @media screen and (max-width: 450px) {
-        height: 600px;
+        max-height: 640px;
     }
 }
