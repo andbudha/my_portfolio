@@ -15,15 +15,15 @@
     background: none;
 
     .burger_nav_container {
-        width: 75%;
+        width: 65%;
         height: 100%;
         margin: 0 auto;
         position: absolute;
         top: 20px;
         bottom: 0;
-        left: 44px;
+        left: 72px;
         background: $additional_color;
-        transform: translate(0, -250px);
+        transform: translate(0, -200px);
         transition: 0.55s;
         @include flexBox(nowrap, column, space-evenly, center);
 
@@ -48,23 +48,22 @@
     }
 
     .show_menu {
-        width: 75%;
-        height: 100%;
+        width: 65%;
+        height: 220px;
         margin: 0 auto;
         position: absolute;
-        top: 20px;
+        top: 0;
         bottom: 0;
-        left: 50px;
+        left: 72px;
         background: $additional_color;
         transform: translate(0, 0);
         transition: 0.55s;
-        height: 100%;
         @include flexBox(nowrap, column, space-evenly, center);
 
         a {
             text-decoration: none;
             color: $primary_color;
-            font-size: $normalTextSize;
+            font-size: $secondaryTextSize;
             letter-spacing: 2px;
             position: relative;
             cursor: pointer;
@@ -81,16 +80,16 @@
     }
 
     .burger_btn {
-        height: 25px;
-        width: 25px;
+        height: 36px;
+        width: 36px;
         color: $primary_color;
         position: absolute;
         top: 30px;
         right: 30px;
 
         .burger {
-            height: 35px;
-            width: 35px;
+            height: 100%;
+            width: 100%;
             cursor: pointer;
             background: none;
         }
