@@ -7,7 +7,11 @@ import reactTodoImg from './project_images/reacttodo.jpg'
 
 export const Projects = () => {
 
-    const description = 'Brief project description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+    const jsTodo = 'This is an ordinary todolist wth Java Script. Once the list contains more than five tasks, a new field for tasklist-filtering will be displayed.';
+
+    const reactCounter = 'A cool project where you can set a max-value and a start-value. While incrementing the start-value, the increment button will get disabled once the max-value has been reached.';
+
+    const reactTodo = 'This todolist with ReactJS, offers more functionalies in comparison with the first todolist project. You can edit titles, tick off completed tasks, filter through tasks';
 
     const jsTodoImage = {
         backgroundImage: `url(${jsTodoImg})`
@@ -26,9 +30,9 @@ export const Projects = () => {
             <div className={styles.projects_container}>
                 <Title title={'My Projects'} />
                 <div className={styles.projects_box_container}>
-                    <Project description={description} projectTitle={'Todolist-JS'} image={jsTodoImage} link={'https://andbudha.github.io/javascript_todolist/'} />
-                    <Project description={description} projectTitle={'Counter'} image={counterImage} />
-                    <Project description={description} projectTitle={'Todolist-ReactJS'} image={reactTodoImage} />
+                    <Project description={jsTodo} projectTitle={'Todolist with JS'} image={jsTodoImage} link={'https://andbudha.github.io/javascript_todolist/'} />
+                    <Project description={reactCounter} projectTitle={'Counter with ReactJS'} image={counterImage} />
+                    <Project description={reactTodo} projectTitle={'Todolist with ReactJS'} image={reactTodoImage} />
                 </div>
             </div>
         </div>
