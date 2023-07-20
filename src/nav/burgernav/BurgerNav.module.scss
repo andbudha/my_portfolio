@@ -9,24 +9,28 @@
 }
 
 .burger_nav {
-    border: solid 1px white;
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    background: lime;
-    position: relative;
+    background: none;
 
     .burger_nav_container {
-        width: 70%;
+        width: 75%;
         height: 100%;
-        background: $secondary_color;
         margin: 0 auto;
+        position: absolute;
+        top: 20px;
+        bottom: 0;
+        left: 44px;
+        background: $additional_color;
+        transform: translate(0, -250px);
+        transition: 0.55s;
         @include flexBox(nowrap, column, space-evenly, center);
 
         a {
             text-decoration: none;
             color: $primary_color;
-            font-size: $smallTextSize;
+            font-size: $normalTextSize;
             letter-spacing: 2px;
             position: relative;
             cursor: pointer;
@@ -41,27 +45,58 @@
             color: $secondary_color;
         }
 
-        .nav_container>* {
+    }
+
+    .show_menu {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 20px;
+        bottom: 0;
+        left: 50px;
+        background: $additional_color;
+        transform: translate(0, 0);
+        transition: 0.55s;
+        height: 100%;
+        @include flexBox(nowrap, column, space-evenly, center);
+
+        a {
+            text-decoration: none;
+            color: $primary_color;
+            font-size: $normalTextSize;
+            letter-spacing: 2px;
+            position: relative;
             cursor: pointer;
+            background: $additional_color;
+
+            &:hover {
+                color: $secondary_color;
+            }
+        }
+
+        .active {
+            color: $secondary_color;
+        }
+    }
+
+    .burger_btn {
+        height: 25px;
+        width: 25px;
+        color: $primary_color;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        .burger {
+            height: 35px;
+            width: 35px;
+            cursor: pointer;
+            background: none;
         }
     }
 
     @media screen and (min-width: 500px) {
         display: none;
-    }
-
-    .burger_btn {
-        height: 30px;
-        width: 30px;
-        color: $primary_color;
-        position: absolute;
-        top: 15px;
-        right: 0;
-
-        .burger {
-            height: 30px;
-            width: 30px;
-            cursor: pointer;
-        }
     }
 }
