@@ -7,7 +7,7 @@ import reactTodoImg from './project_images/reacttodo.jpg'
 
 export const Projects = () => {
 
-    const jsTodo = 'This is an ordinary todolist wth Java Script. Once the list contains more than five tasks, a new field for tasklist-filtering will be displayed.';
+    const jsTodo = 'This is an ordinary todolist wth Java Script. Once the list contains more than five tasks, a new field for tasklist-filtering will be displayed. Follow the link to experience more.';
 
     const reactCounter = 'A cool project where you can set a max-value and a start-value. While incrementing the start-value, the increment button will get disabled once the max-value has been reached.';
 

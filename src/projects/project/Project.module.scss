@@ -9,39 +9,16 @@
 
 .project_box {
     width: 400px;
-    height: 400px;
+    height: 450px;
     margin: 20px;
     border: $additional_color 2px solid;
     border-radius: 7px;
     box-shadow: $primary_color 0px 2px 20px;
     position: relative;
-    @include flexBox(nowrap, column, space-between, center);
-
-    a {
-        position: absolute;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        text-decoration: none;
-        color: $secondary_color;
-        font-size: $primaryTextSize;
-        font-weight: 400;
-        @include flexBox(nowrap, row, center, center);
-
-        &:hover {
-            opacity: 0.8;
-            background-color: $background_color;
-            transition: ease-in-out all 0.4s;
-        }
-
-        &:not(:hover) {
-            transition: ease-in-out all 0.4s;
-        }
-    }
+    @include flexBox(nowrap, column, space-evenly, center);
 
     .img_container {
-        min-height: 60%;
+        height: 58%;
         min-width: 100%;
         background-size: cover;
         background-position: center;
@@ -50,12 +27,49 @@
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
         @include flexBox(nowrap, column, center, center);
+
+        a {
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            opacity: 0.6;
+            text-decoration: none;
+            color: $secondary_color;
+            font-size: $normalTextSize;
+            font-weight: 400;
+            @include flexBox(nowrap, row, center, center);
+
+            &:hover {
+                opacity: 0.8;
+                background-color: $background_color;
+                transition: ease-in-out all 0.4s;
+            }
+
+            &:not(:hover) {
+                transition: ease-in-out all 0.4s;
+            }
+
+            span {
+                color: $secondary_color;
+                border: 1px solid $secondary_color;
+                padding: 14px 14px 10px;
+
+                @media screen and (max-width: 520px) {
+                    font-size: $smallTextSize;
+                    padding: 8px 10px 6px;
+                }
+            }
+        }
     }
 
     .project_description_box {
-        min-height: 35%;
+        position: relative;
+        min-height: 40%;
         min-width: 100%;
         padding: 15px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
         @include flexBox(nowrap, column, center, center);
 
         .title {
@@ -82,6 +96,43 @@
             color: $secondary_color;
             font-family: 'Poppins', sans-serif;
         }
+    }
+
+    .project_btn {
+        text-decoration: none;
+        margin-right: 20px;
+        width: 145px;
+        height: 50px;
+        display: inline-block;
+        padding: 14px 10px;
+        cursor: pointer;
+        font-size: $smallTextSize;
+        background-color: $primary_color;
+        color: $secondary_color;
+        border: $secondary_color 2px solid;
+
+        &:hover {
+            transition: ease-in-out all 0.55s;
+            border: $primary_color 2px solid;
+            background-color: $secondary_color;
+            color: $primary_color;
+        }
+
+        @media screen and (max-width: 520px) {
+            width: 120px;
+            height: 45px;
+            padding: 13px 10px;
+            margin-right: 10px;
+            font-size: $xsmallTextSize;
+        }
+    }
+
+    .active {
+        color: $secondary_color;
+    }
+
+    .projects_btn:not(:hover) {
+        transition: ease-in-out all 0.55s;
     }
 
     @media screen and (max-width: 520px) {
