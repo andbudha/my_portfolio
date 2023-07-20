@@ -6,7 +6,7 @@ export const Project = (props) => {
     return (
         <Fade bottom>
             <div className={styles.project_box}>
-                <a href="#" className={styles.uni_btn}><span>CLICK FOR MORE...</span></a>
+                <a href={props.link} target="_blank" className={styles.uni_btn}><span>CLICK FOR MORE...</span></a>
                 <div className={styles.img_container} style={props.image}>
                 </div>
                 <div className={styles.project_description_box}>

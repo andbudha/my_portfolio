@@ -51,7 +51,7 @@ export const BurgerNav = () => {
                     to='contact'
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-85}
                     duration={500}
                 >Contact</Link>
             </div>

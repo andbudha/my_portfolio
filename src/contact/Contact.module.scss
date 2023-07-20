@@ -9,7 +9,6 @@
 
 .contact {
     height: 800px;
-    border: 1px solid #fff;
     width: 80%;
     margin: 50px auto 0;
 
@@ -140,8 +139,12 @@
         }
 
         @media screen and (max-width: 440px) {
-            max-width: 275px;
+            max-width: 280px;
             height: 375px;
+        }
+
+        @media screen and (max-width: 360px) {
+            max-width: 260px;
         }
     }
 
@@ -151,7 +154,7 @@
     }
 
     @media screen and (max-width: 520px) {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     @media screen and (max-width: 450px) {

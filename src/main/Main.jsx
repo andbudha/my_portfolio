@@ -1,5 +1,6 @@
 import styles from './Main.module.scss';
 import { TypeAnimation } from 'react-type-animation';
+import { Link, animateScroll as scroll } from "react-scroll";
 import profileImgOne from './img/no_background_1.1.png';
 import profileImgTwo from './img/no_background_1.2.png';
 
@@ -29,10 +30,24 @@ export const Main = () => {
                         className={styles.position_span}
                     />
                     <div className={styles.btn_container}>
-                        <a href="#projects" className={styles.projects_btn}>
-                            MY PROJECTS
-                        </a>
-                        <a href="#" className={styles.contact_btn}>GET IN TOUCH</a>
+                        <Link
+                            className={styles.projects_btn}
+                            activeClass={styles.active}
+                            to='projects'
+                            spy={true}
+                            smooth={true}
+                            offset={-94}
+                            duration={500}
+                        >MY PROJECTS</Link>
+                        <Link
+                            className={styles.contact_btn}
+                            activeClass={styles.active}
+                            to='contact'
+                            spy={true}
+                            smooth={true}
+                            offset={-94}
+                            duration={500}
+                        >GET IN TOUCH</Link>
                     </div>
                 </div>
                 <div className={styles.main_img} style={profileImgMain}></div>

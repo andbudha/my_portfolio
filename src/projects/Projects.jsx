@@ -26,7 +26,7 @@ export const Projects = () => {
             <div className={styles.projects_container}>
                 <Title title={'My Projects'} />
                 <div className={styles.projects_box_container}>
-                    <Project description={description} projectTitle={'Todolist-JS'} image={jsTodoImage} />
+                    <Project description={description} projectTitle={'Todolist-JS'} image={jsTodoImage} link={'https://andbudha.github.io/javascript_todolist/'} />
                     <Project description={description} projectTitle={'Counter'} image={counterImage} />
                     <Project description={description} projectTitle={'Todolist-ReactJS'} image={reactTodoImage} />
                 </div>
