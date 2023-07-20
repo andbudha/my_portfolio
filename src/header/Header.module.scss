@@ -19,7 +19,7 @@
     @include flexBox(nowrap, row, flex-end, center);
 
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 520px) {
         height: 150px;
         background: none;
     }
