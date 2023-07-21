@@ -40,16 +40,16 @@ export const Contact = () => {
 
     //input value catching func.
     const typingNameHandler = (event) => {
-        setNameInputValue(event.currentTarget.value.trim());
+        setNameInputValue(event.currentTarget.value);
     }
 
     const typingEmailHandler = (event) => {
-        setEmailInputValue(event.currentTarget.value.trim());
+        setEmailInputValue(event.currentTarget.value);
     }
 
     const typingTextHandler = (event) => {
 
-        setTextareaInputValue(event.currentTarget.value.trim());
+        setTextareaInputValue(event.currentTarget.value);
     }
 
     //loader activating func
