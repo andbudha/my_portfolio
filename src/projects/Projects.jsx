@@ -4,6 +4,7 @@ import { Title } from '../components/common/title/Title';
 import jsTodoImg from './project_images/jstodo.jpg'
 import counterImg from './project_images/counter.jpg'
 import reactTodoImg from './project_images/reacttodo.jpg'
+import { Loader } from '../contact/Loader/Loader';
 
 
 
@@ -35,6 +36,7 @@ export const Projects = () => {
                     <Project description={jsTodo} projectTitle={'Todolist with JS'} image={jsTodoImage} link={'https://andbudha.github.io/javascript_todolist/'} />
                     <Project description={reactCounter} projectTitle={'Counter with ReactJS'} image={counterImage} />
                     <Project description={reactTodo} projectTitle={'Todolist with ReactJS'} image={reactTodoImage} />
+                    <Loader />
                 </div>
             </div>
         </div>

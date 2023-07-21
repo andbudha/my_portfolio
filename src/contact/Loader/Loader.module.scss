@@ -1,0 +1,107 @@
+@import '../../components/common/sass/mixins.scss';
+@import '../../components/common/sass/variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loader_container {
+    height: 100%;
+    width: 100%;
+    @include flexBox(nowrap, column, center, center);
+}
+
+.loader {
+    position: relative;
+    margin: 25px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 40px 60px 30px 60px;
+    border-color: $primary_color #F29727 #F2BE22 #F29727;
+    animation: envFloating 1s ease-in infinite alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    right: 62px;
+    top: -40px;
+    height: 70px;
+    width: 50px;
+    background-image:
+        linear-gradient(#F24C3D 45px, transparent 0),
+        linear-gradient(#fff 45px, transparent 0),
+        linear-gradient(#F24C3D 45px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 30px 4px;
+    background-position: 0px 11px, 8px 35px, 0px 60px;
+    animation: envDropping 0.75s linear infinite;
+}
+
+@keyframes envFloating {
+    0% {
+        transform: translate(-2px, -5px)
+    }
+
+    100% {
+        transform: translate(0, 5px)
+    }
+}
+
+@keyframes envDropping {
+    0% {
+        background-position: 100px 11px, 115px 35px, 105px 60px;
+        opacity: 1;
+    }
+
+    50% {
+        background-position: 0px 11px, 20px 35px, 5px 60px;
+    }
+
+    60% {
+        background-position: -30px 11px, 0px 35px, -10px 60px;
+    }
+
+    75%,
+    100% {
+        background-position: -30px 11px, -30px 35px, -30px 60px;
+        opacity: 0;
+    }
+}
+
+
+.sending {
+    color: $primary_color;
+    display: inline-block;
+    position: relative;
+    font-size: $primaryTextSize;
+    box-sizing: border-box;
+}
+
+.sending::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: currentColor;
+    position: absolute;
+    bottom: -15px;
+    right: 55px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+    0% {
+        box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow: 10px 0 white, 20px 0 rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 10px 0 white, 20px 0 white;
+    }
+}
