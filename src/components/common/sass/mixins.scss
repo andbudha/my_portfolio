@@ -12,6 +12,7 @@
     border: $primary_color 1px solid;
     background: conic-gradient($primary_color $coveredValue, $secondary_color 0turn);
     animation: animate 5s linear forwards;
+
     margin: 20px;
 
     .progress_values {

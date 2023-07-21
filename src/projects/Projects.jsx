@@ -5,6 +5,9 @@ import jsTodoImg from './project_images/jstodo.jpg'
 import counterImg from './project_images/counter.jpg'
 import reactTodoImg from './project_images/reacttodo.jpg'
 
+
+
+
 export const Projects = () => {
 
     const jsTodo = 'This is an ordinary todolist wth Java Script. Once the list contains more than five tasks, a new field for tasklist-filtering will be displayed. Follow the link to experience more.';
@@ -23,7 +26,6 @@ export const Projects = () => {
     const reactTodoImage = {
         backgroundImage: `url(${reactTodoImg})`
     }
-
 
     return (
         <div className={styles.projects} id={'projects'}>
