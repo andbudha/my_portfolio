@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTelegram, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer = () => {
     return (

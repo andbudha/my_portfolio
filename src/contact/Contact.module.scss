@@ -21,7 +21,24 @@
         background: $secondary_color;
         box-shadow: $primary_color 0px 2px 20px;
         border-radius: 7px;
+        position: relative;
         @include flexBox(nowrap, column, center, center);
+
+        .loader_canvas {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            opacity: 0.9;
+        }
+
+        .success_canvas {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            opacity: 0.9;
+        }
 
         .form_container {
             max-width: 500px;
