@@ -4,15 +4,22 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import { Loader } from './Loader/Loader';
 import { Success } from './Success/Success';
+import { Failure } from './Failure/Failure';
 
 export const Contact = () => {
     const form = useRef();
 
-    //sendind status
+    //sendind status states
     const [sendingStatus, setSendingStatus] = useState(false);
     const [sendingSuccess, setSendingSuccess] = useState(false);
-    const [sendingFailure, setSendingFailure] = useState(true);
+    const [sendingFailure, setSendingFailure] = useState(false);
 
+    //input states
+    const [nameInputValue, setNameInputValue] = useState('');
+    const [emailInputValue, setEmailInputValue] = useState('');
+    const [textareaInputValue, setTextareaInputValue] = useState('');
+
+    //EmailJS form validation 
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -23,7 +30,7 @@ export const Contact = () => {
                     setSendingSuccess(true);
                     setTimeout(() => {
                         setSendingSuccess(false);
-                    }, 3500);
+                    }, 4000);
                 }
                 e.target.reset();
             }, (error) => {
@@ -31,9 +38,32 @@ export const Contact = () => {
             });
     };
 
-    const sendHandler = () => {
-        setSendingStatus(true);
+    //input value catching func.
+    const typingNameHandler = (event) => {
+        setNameInputValue(event.currentTarget.value.trim());
     }
+
+    const typingEmailHandler = (event) => {
+        setEmailInputValue(event.currentTarget.value.trim());
+    }
+
+    const typingTextHandler = (event) => {
+
+        setTextareaInputValue(event.currentTarget.value.trim());
+    }
+
+    //loader activating func
+    const sendHandler = () => {
+        if (nameInputValue !== '' && emailInputValue !== '' && textareaInputValue !== '') {
+            setSendingStatus(true);
+        } else {
+            setSendingFailure(true);
+            setTimeout(() => {
+                setSendingFailure(false);
+            }, 4000);
+        }
+    }
+
     return (
         <div className={styles.contact} id={'contact'}>
             <Title title={'Get In Touch'} />
@@ -41,10 +71,11 @@ export const Contact = () => {
             <div className={styles.contact_container}>
                 {sendingStatus ? <div className={styles.loader_canvas}> <Loader /></div> : ''}
                 {sendingSuccess ? <div className={styles.success_canvas}> <Success /></div> : ''}
+                {sendingFailure ? <div className={styles.failure_canvas}> <Failure /></div> : ''}
                 <form className={styles.form_container} ref={form} onSubmit={sendEmail}>
-                    <input className={styles.input_field} type="text" required placeholder={'Name*'} name="user_name" />
-                    <input className={styles.input_field} type="email" required placeholder={'Email*'} name="user_email" />
-                    <textarea className={styles.textarea_field} cols="auto" rows="auto" placeholder={'Your Message*'} name="message" />
+                    <input className={styles.input_field} type="text" required placeholder={'Name*'} name="user_name" onChange={typingNameHandler} value={nameInputValue} />
+                    <input className={styles.input_field} type="email" required placeholder={'Email*'} name="user_email" onChange={typingEmailHandler} value={emailInputValue} />
+                    <textarea className={styles.textarea_field} cols="auto" rows="auto" placeholder={'Your Message*'} name="message" onChange={typingTextHandler} value={textareaInputValue} required />
                     <input className={styles.submit_btn} type="submit" value={'SEND MESSAGE'} onClick={sendHandler} />
                 </form>
             </div>
