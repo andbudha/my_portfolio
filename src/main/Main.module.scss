@@ -201,8 +201,9 @@
         }
     }
 
-    @media only screen and (device-width: 740px) and (orientation: landscape) {
-        /* css rules */
+    @media only screen and (max-width: 1240px) and (orientation: landscape) {
+        height: 275vh;
+        margin-bottom: 0px;
     }
 
     @media screen and (max-width: 820px) {
@@ -211,6 +212,6 @@
 
     @media screen and (max-width: 520px) {
         height: 100vh;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 }
