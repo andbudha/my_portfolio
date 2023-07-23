@@ -32,9 +32,17 @@ export const Contact = () => {
                         setSendingSuccess(false);
                     }, 4000);
                 }
-                e.target.reset();
+                setNameInputValue('');
+                setEmailInputValue('');
+                setTextareaInputValue('');
             }, (error) => {
-                console.log(error.text);
+                if (error) {
+                    setSendingFailure(true);
+                    setSendingStatus(false);
+                    setTimeout(() => {
+                        setSendingFailure(false);
+                    }, 4000)
+                }
             });
     };
 
@@ -54,13 +62,9 @@ export const Contact = () => {
 
     //loader activating func
     const sendHandler = () => {
-        if (nameInputValue !== '' && emailInputValue !== '' && textareaInputValue !== '') {
+        const email = (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailInputValue));
+        if (nameInputValue !== '' && email && textareaInputValue !== '') {
             setSendingStatus(true);
-        } else {
-            setSendingFailure(true);
-            setTimeout(() => {
-                setSendingFailure(false);
-            }, 4000);
         }
     }
 

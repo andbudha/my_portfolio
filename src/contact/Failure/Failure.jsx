@@ -6,8 +6,8 @@ export const Failure = () => {
     return (
         <div className={styles.failure_container}>
             <span className={styles.failure_icon}><FontAwesomeIcon icon={faCircleExclamation} className={styles.failure_icon} /></span>
-            <span className={styles.message}>Please, fill all</span>
-            <span className={styles.message}> the fileds properly out!</span>
+            <span className={styles.message}>Unexpected error,</span>
+            <span className={styles.message}> please, try again!</span>
         </div>
 
     );
