@@ -15,7 +15,7 @@
     .main_container {
         height: 100%;
         width: 80%;
-        @include flexBox(wrap, row, space-around, center);
+        @include flexBox(wrap, row, space-evenly, center);
 
         .greeting {
             width: 400px;
