@@ -10,7 +10,8 @@ export const ProgressBar = () => {
                     <div className={`${styles.progress} ${styles.html}`}>
                         <div className={styles.progress_values}>
                             <h3>75<span>%</span></h3>
-                            <h4>HTML & CSS</h4>
+                            <h4>HTML</h4>
+                            <h4>CSS & SASS</h4>
                         </div>
                     </div>
                 </Fade>
