@@ -33,7 +33,7 @@ export const Projects = () => {
             <div className={styles.projects_container}>
                 <Title title={'My Projects'} />
                 <div className={styles.projects_box_container}>
-                    <Project description={reactWeather} projectTitle={'WeatherAPP with ReactJS'} image={weatherImage} link={'https://reactjs-weather-7wk44jcbo-andbudha.vercel.app'} />
+                    <Project description={reactWeather} projectTitle={'WeatherAPP with ReactJS'} image={weatherImage} link={'https://reactjs-weather-40wxpzlc5-andbudha.vercel.app'} />
                     <Project description={jsTodo} projectTitle={'Todolist with JS'} image={jsTodoImage} link={'https://andbudha.github.io/javascript_todolist/'} />
                     <Project description={reactTodo} projectTitle={'Todolist with ReactJS'} image={reactTodoImage} link={'https://todo-with-reactjs-psi.vercel.app/'} />
                 </div>
