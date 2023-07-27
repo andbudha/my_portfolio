@@ -11,7 +11,7 @@ import { Loader } from '../contact/Loader/Loader';
 
 export const Projects = () => {
 
-    const jsTodo = 'This is an ordinary todolist wth Java Script. Once the list contains more than five tasks, a new field for tasklist-filtering will be displayed. Follow the link to experience more.';
+    const jsTodo = 'This is an ordinary todolist wth Java Script. You can add tasks, mark them as done and remove. Follow the link to experience more.';
 
     const reactCounter = 'A cool project where you can set a max-value and a start-value. While incrementing the start-value, the increment button will get disabled once the max-value has been reached.';
 
