@@ -2,54 +2,66 @@
 @import '../components/common/sass/variables.scss';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .progressbar {
-    min-height: 300px;
-    width: 100%;
-    @include flexBox(nowrap, row, center, center);
+  min-height: 300px;
+  width: 100%;
+  @include flexBox(nowrap, row, center, center);
 
-    .progress_container {
-        width: 70%;
-        @include flexBox(wrap, row, space-evenly, center);
+  .progress_container {
+    width: 70%;
+    @include flexBox(wrap, row, space-evenly, center);
 
-        .html {
-            @include circularProgressBar(270deg);
-        }
-
-        .js {
-            @include circularProgressBar(270deg);
-        }
-
-        .ts {
-            @include circularProgressBar(270deg);
-        }
-
-        .react {
-            @include circularProgressBar(306deg);
-        }
-
-        .toolkit {
-            @include circularProgressBar(324deg);
-        }
-
-        .unit_tests {
-            @include circularProgressBar(252deg);
-        }
-
-        .formik {
-            @include circularProgressBar(288deg);
-        }
-
-        .mui {
-            @include circularProgressBar(288deg);
-        }
-
-        @media screen and (max-width: 550px) {
-            width: 100%;
-        }
+    .html {
+      @include circularProgressBar(250deg);
     }
+
+    .sass {
+      @include circularProgressBar(250deg);
+    }
+
+    .js {
+      @include circularProgressBar(250deg);
+    }
+
+    .react {
+      @include circularProgressBar(270deg);
+    }
+
+    .ts {
+      @include circularProgressBar(250deg);
+    }
+
+    .redux {
+      @include circularProgressBar(250deg);
+    }
+
+    .toolkit {
+      @include circularProgressBar(250deg);
+    }
+    .unit_tests {
+      @include circularProgressBar(250deg);
+    }
+
+    .formik {
+      @include circularProgressBar(250deg);
+    }
+    .redux_form {
+      @include circularProgressBar(250deg);
+    }
+    .tail {
+      @include circularProgressBar(250deg);
+    }
+    .mui {
+      @include circularProgressBar(250deg);
+    }
+
+    @media screen and (max-width: 550px) {
+      width: 100%;
+    }
+  }
 }

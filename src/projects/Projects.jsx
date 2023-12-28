@@ -2,7 +2,6 @@ import styles from './Projects.module.scss';
 import { Project } from './project/Project';
 import { Title } from '../components/common/title/Title';
 import jsTodoImg from './project_images/jstodo.jpg';
-import counterImg from './project_images/counter.jpg';
 import pizzaProject from './project_images/pizzas.png';
 import reactTodoImg from './project_images/reacttodo.jpg';
 import weatherImg from './project_images/weather.png';
