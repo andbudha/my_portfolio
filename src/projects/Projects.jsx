@@ -52,13 +52,13 @@ export const Projects = () => {
           />
           <Project
             description={jsTodo}
-            projectTitle={'Todolist with JS'}
+            projectTitle={'Task-manager with JS'}
             image={jsTodoImage}
             link={'https://andbudha.github.io/javascript_todolist/'}
           />
           <Project
             description={reactTodo}
-            projectTitle={'Todolist with ReactJS'}
+            projectTitle={'Task-manager with ReactJS'}
             image={reactTodoImage}
             link={'https://todo-with-reactjs-psi.vercel.app/'}
           />
