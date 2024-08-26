@@ -51,10 +51,10 @@
     }
 
     .formik {
-      @include circularProgressBar(250deg);
+      @include circularProgressBar(220deg);
     }
     .redux_form {
-      @include circularProgressBar(250deg);
+      @include circularProgressBar(220deg);
     }
     .tail {
       @include circularProgressBar(250deg);
@@ -63,7 +63,13 @@
       @include circularProgressBar(250deg);
     }
     .firebase {
-      @include circularProgressBar(250deg);
+      @include circularProgressBar(220deg);
+    }
+    .mern {
+      @include circularProgressBar(220deg);
+    }
+    .git_github {
+      @include circularProgressBar(200deg);
     }
 
     @media screen and (max-width: 550px) {

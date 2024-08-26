@@ -104,9 +104,16 @@ export const ProgressBar = () => {
           </div>
         </Fade>
         <Fade left>
-          <div className={`${styles.progress} ${styles.firebase}`}>
+          <div className={`${styles.progress} ${styles.mern}`}>
             <div className={styles.progress_values}>
               <h4>MERN</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.progress} ${styles.git_github}`}>
+            <div className={styles.progress_values}>
+              <h4>GIT/GITHUB</h4>
             </div>
           </div>
         </Fade>
