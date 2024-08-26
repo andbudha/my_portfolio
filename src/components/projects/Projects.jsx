@@ -1,6 +1,6 @@
 import styles from './Projects.module.scss';
 import { Project } from './project/Project';
-import { Title } from '../components/common/title/Title';
+import { Title } from '../../common/title/Title';
 import jsTodoImg from './project_images/jstodo.jpg';
 import pizzaProject from './project_images/pizzas.png';
 import reactTodoImg from './project_images/reacttodo.jpg';

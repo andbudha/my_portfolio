@@ -1,0 +1,167 @@
+@import '../../../common/sass/mixins.scss';
+@import '../../../common/sass/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project_box {
+  width: 400px;
+  height: 450px;
+  margin: 20px;
+  border: $additional_color 2px solid;
+  border-radius: 7px;
+  box-shadow: $primary_color 0px 2px 20px;
+  position: relative;
+  @include flexBox(nowrap, column, space-evenly, center);
+
+  .img_container {
+    height: 58%;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    @include flexBox(nowrap, column, center, center);
+
+    a {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      opacity: 0.6;
+      text-decoration: none;
+      color: $secondary_color;
+      font-size: $normalTextSize;
+      font-weight: 400;
+      @include flexBox(nowrap, row, center, center);
+
+      &:hover {
+        opacity: 0.8;
+        background-color: $background_color;
+        transition: ease-in-out all 0.4s;
+      }
+
+      &:not(:hover) {
+        transition: ease-in-out all 0.4s;
+      }
+
+      span {
+        color: $secondary_color;
+        border: 1px solid $secondary_color;
+        padding: 14px 14px 10px;
+
+        @media screen and (max-width: 520px) {
+          font-size: $smallTextSize;
+          padding: 8px 10px 6px;
+        }
+      }
+    }
+  }
+
+  .project_description_box {
+    position: relative;
+    min-height: 40%;
+    min-width: 100%;
+    padding: 15px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    @include flexBox(nowrap, column, center, center);
+
+    .title {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+
+      .project_title {
+        margin: 0 0 5px;
+        font-size: $primaryTextSize;
+        letter-spacing: 1px;
+        line-height: 1;
+        color: $primary_color;
+      }
+    }
+
+    .project_description {
+      min-height: auto;
+      margin: 0 0 5px;
+      font-size: $smallTextSize;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+      color: $secondary_color;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  .project_btn {
+    text-decoration: none;
+    margin-right: 20px;
+    width: 145px;
+    height: 50px;
+    display: inline-block;
+    padding: 14px 10px;
+    cursor: pointer;
+    font-size: $smallTextSize;
+    background-color: $primary_color;
+    color: $secondary_color;
+    border: $secondary_color 2px solid;
+
+    &:hover {
+      transition: ease-in-out all 0.55s;
+      border: $primary_color 2px solid;
+      background-color: $secondary_color;
+      color: $primary_color;
+    }
+
+    @media screen and (max-width: 520px) {
+      width: 120px;
+      height: 45px;
+      padding: 13px 10px;
+      margin-right: 10px;
+      font-size: $xsmallTextSize;
+    }
+  }
+
+  .active {
+    color: $secondary_color;
+  }
+
+  .projects_btn:not(:hover) {
+    transition: ease-in-out all 0.55s;
+  }
+
+  @media screen and (max-width: 520px) {
+    .project_box {
+      height: 350px;
+    }
+
+    .img_container {
+      min-height: 50%;
+    }
+
+    .project_description_box {
+      min-height: 50%;
+      padding: 15px 10px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .img_container {
+      min-height: 35%;
+    }
+
+    .project_description_box {
+      min-height: 65%;
+      padding: 15px 10px;
+    }
+
+    .project_title {
+      font-size: $secondaryTextSize;
+    }
+  }
+}

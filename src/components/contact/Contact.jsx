@@ -1,5 +1,5 @@
 import styles from './Contact.module.scss';
-import { Title } from '../components/common/title/Title';
+import { Title } from '../../common/title/Title';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Loader } from './Loader/Loader';

@@ -1,0 +1,28 @@
+@import '../../../common/sass/mixins.scss';
+@import '../../../common/sass/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.failure_container {
+  height: 100%;
+  width: 100%;
+  @include flexBox(nowrap, column, center, center);
+
+  .failure_icon {
+    height: 75px;
+    width: 75px;
+    color: $primary_color;
+    margin-bottom: 20px;
+  }
+
+  .message {
+    color: $secondary_color;
+    font-family: $primaryFont;
+    font-size: $secondaryTitle;
+    margin-bottom: 20px;
+  }
+}
