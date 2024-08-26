@@ -55,37 +55,58 @@ export const ProgressBar = () => {
           </div>
         </Fade>
         <Fade right>
+          <div className={`${styles.progress} ${styles.context_api}`}>
+            <div className={styles.progress_values}>
+              <h4>CONTEXT API</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade left>
           <div className={`${styles.progress} ${styles.unit_tests}`}>
             <div className={styles.progress_values}>
               <h4>UNIT TESTS</h4>
             </div>
           </div>
         </Fade>
-        <Fade left>
+        <Fade right>
           <div className={`${styles.progress} ${styles.formik}`}>
             <div className={styles.progress_values}>
               <h4>FORMIK</h4>
             </div>
           </div>
         </Fade>
-        <Fade right>
+        <Fade left>
           <div className={`${styles.progress} ${styles.redux_form}`}>
             <div className={styles.progress_values}>
               <h4>REDUX FORM</h4>
             </div>
           </div>
         </Fade>
-        <Fade left>
+        <Fade right>
           <div className={`${styles.progress} ${styles.tail}`}>
             <div className={styles.progress_values}>
               <h4>TAILWINDCSS</h4>
             </div>
           </div>
         </Fade>
-        <Fade right>
+        <Fade left>
           <div className={`${styles.progress} ${styles.mui}`}>
             <div className={styles.progress_values}>
               <h4>MUI</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.progress} ${styles.firebase}`}>
+            <div className={styles.progress_values}>
+              <h4>FIREBASE</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.progress} ${styles.firebase}`}>
+            <div className={styles.progress_values}>
+              <h4>MERN</h4>
             </div>
           </div>
         </Fade>

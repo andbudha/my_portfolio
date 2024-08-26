@@ -43,6 +43,9 @@
     .toolkit {
       @include circularProgressBar(250deg);
     }
+    .context_api {
+      @include circularProgressBar(250deg);
+    }
     .unit_tests {
       @include circularProgressBar(250deg);
     }
@@ -57,6 +60,9 @@
       @include circularProgressBar(250deg);
     }
     .mui {
+      @include circularProgressBar(250deg);
+    }
+    .firebase {
       @include circularProgressBar(250deg);
     }
 
