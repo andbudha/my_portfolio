@@ -48,7 +48,7 @@ export const Projects = () => {
             description={reactWeather}
             projectTitle={'Watch..It App'}
             image={watchitImage}
-            link={'https://watch-it-with-react-and-firebase.netlify.app/'}
+            link={'https://watch-it-mern-client.vercel.app/'}
           />
           <Project
             description={reactPizzaProject}
