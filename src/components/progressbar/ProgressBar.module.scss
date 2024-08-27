@@ -68,6 +68,9 @@
     .mern {
       @include circularProgressBar(220deg);
     }
+    .next_js {
+      @include circularProgressBar(200deg);
+    }
     .git_github {
       @include circularProgressBar(200deg);
     }
