@@ -68,6 +68,12 @@
     .mern {
       @include circularProgressBar(220deg);
     }
+    .mongo_db {
+      @include circularProgressBar(200deg);
+    }
+    .mongoose {
+      @include circularProgressBar(200deg);
+    }
     .next_js {
       @include circularProgressBar(200deg);
     }

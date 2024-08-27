@@ -111,6 +111,20 @@ export const ProgressBar = () => {
           </div>
         </Fade>
         <Fade right>
+          <div className={`${styles.progress} ${styles.mongo_db}`}>
+            <div className={styles.progress_values}>
+              <h4>MONGODB</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.progress} ${styles.mongoose}`}>
+            <div className={styles.progress_values}>
+              <h4>MONGOOSE</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
           <div className={`${styles.progress} ${styles.next_js}`}>
             <div className={styles.progress_values}>
               <h4>NEXT.JS</h4>
