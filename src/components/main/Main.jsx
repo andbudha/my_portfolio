@@ -21,7 +21,7 @@ export const Main = () => {
             I'm <span className={styles.name}>Andrei</span>
           </h1>
           <TypeAnimation
-            sequence={['FULL-STACK DEVELOPER', 2500]}
+            sequence={['FRONT-END DEVELOPER', 2500]}
             wrapper="span"
             speed={300}
             repeat={1}
