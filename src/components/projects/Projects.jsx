@@ -12,18 +12,12 @@ export const Projects = () => {
   const reactWeather =
     'This app built with React.js, Typescript and Firebase allows you to register a new account, save movies to or remove movies from your favorite list. You can also comment on various movies.';
 
-  const reactPizzaProject =
-    'This app built with ReactJS, TypeScript and RTK allows you to search, filter, remove and add items to your shopping cart. Just give it a try and simulate online shopping.';
   const blogitImage = {
     backgroundImage: `url(${blogitImg})`,
   };
 
   const watchitImage = {
     backgroundImage: `url(${watchitImg})`,
-  };
-
-  const pizzaProjectImage = {
-    backgroundImage: `url(${pizzaProjectImg})`,
   };
 
   return (
@@ -42,12 +36,6 @@ export const Projects = () => {
             projectTitle={'Watch..It'}
             image={watchitImage}
             link={'https://watch-it-with-react-and-firebase.netlify.app/'}
-          />
-          <Project
-            description={reactPizzaProject}
-            projectTitle={'React Pizza'}
-            image={pizzaProjectImage}
-            link={'https://andreis-pizza.vercel.app/'}
           />
         </div>
       </div>
