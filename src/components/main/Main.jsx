@@ -1,6 +1,6 @@
 import styles from './Main.module.scss';
 import { TypeAnimation } from 'react-type-animation';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import profileImgOne from './img/no_background_1.1.png';
 import profileImgTwo from './img/no_background_1.2.png';
 
