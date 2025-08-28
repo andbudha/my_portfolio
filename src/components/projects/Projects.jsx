@@ -36,7 +36,7 @@ export const Projects = () => {
             description={nextShop}
             projectTitle={'NextShop'}
             image={nextShopImage}
-            link={'https://blog-it-mern-client.vercel.app/'}
+            link={'https://nextshop-gamma-jade.vercel.app/'}
           />
           <Project
             description={blogIt}
