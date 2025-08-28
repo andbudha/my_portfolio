@@ -29,7 +29,7 @@ export const ProgressBar = () => {
         <Fade right>
           <div className={`${styles.progress} ${styles.react}`}>
             <div className={styles.progress_values}>
-              <h4>REACT</h4>
+              <h4>REACTJS</h4>
             </div>
           </div>
         </Fade>
@@ -78,7 +78,8 @@ export const ProgressBar = () => {
         <Fade left>
           <div className={`${styles.progress} ${styles.redux_form}`}>
             <div className={styles.progress_values}>
-              <h4>REDUX FORM</h4>
+              <h4>REACT HOOK </h4>
+              <h4>FORM</h4>
             </div>
           </div>
         </Fade>
@@ -92,7 +93,7 @@ export const ProgressBar = () => {
         <Fade left>
           <div className={`${styles.progress} ${styles.mui}`}>
             <div className={styles.progress_values}>
-              <h4>MUI</h4>
+              <h4>SHADCN UI</h4>
             </div>
           </div>
         </Fade>
@@ -106,7 +107,7 @@ export const ProgressBar = () => {
         <Fade left>
           <div className={`${styles.progress} ${styles.mern}`}>
             <div className={styles.progress_values}>
-              <h4>MERN</h4>
+              <h4>ZOD</h4>
             </div>
           </div>
         </Fade>
@@ -135,6 +136,20 @@ export const ProgressBar = () => {
           <div className={`${styles.progress} ${styles.git_github}`}>
             <div className={styles.progress_values}>
               <h4>GIT/GITHUB</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className={`${styles.progress} ${styles.next_js}`}>
+            <div className={styles.progress_values}>
+              <h4>POSTGRESQL</h4>
+            </div>
+          </div>
+        </Fade>
+        <Fade left>
+          <div className={`${styles.progress} ${styles.git_github}`}>
+            <div className={styles.progress_values}>
+              <h4>PRISMA</h4>
             </div>
           </div>
         </Fade>
