@@ -7,7 +7,7 @@ import watchitImg from './project_images/watchit.png';
 
 export const Projects = () => {
   const nextShop =
-    'This e-commerce app, built with Next.js, allows users to register, log in, and browse products for online shopping. It also includes a fully functional admin dashboard to manage the store..';
+    'This e-commerce app, built with Next.js, allows users to register, log in, and browse products for online shopping. It also includes a fully functional admin dashboard to manage the store.';
 
   const blogIt =
     'This app built with MERN stack allows you to register a new account, login and after post, edit, delete, and view your blog-posts. You can also comment on blogs, posted by others.';
